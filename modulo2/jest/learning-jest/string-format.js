@@ -1,15 +1,13 @@
 function truncate(
     str,
     count,
-    whithEllipsis
-) {
-    if (str.length <= count) {
+    withEllipsis
+){
+    if(str.length<=count)
         return str;
-    }
-    const substring = str.slice(0, count);
-    if (whithEllipsis)
-        return substring + '...';
-    return substring + '...';
-
+    const substring = str.substring(0,count);
+    if(withEllipsis)
+        return substring;
+    return substring+'...';
 }
-module.exports = { truncate };
+module.exports={truncate}

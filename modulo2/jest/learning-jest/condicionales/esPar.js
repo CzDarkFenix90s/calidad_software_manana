@@ -1,5 +1,6 @@
-function esPar(numero) {
-    if(!Number.isInteger(numero)) throw new TypeError('El valor debe ser un número entero');
-    return numero % 2 === 0;
+function esPar(numero){
+    if(!Number.isInteger(numero)) 
+        throw new TypeError("numero debe ser entero");
+    return numero%2===0;
 }
-module.exports = { esPar };
+module.exports={esPar}

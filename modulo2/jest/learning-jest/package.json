@@ -1,23 +1,15 @@
 {
-  "name": "calidad_software_manana",
+  "name": "learning-jest",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "jest"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CzDarkFenix90s/calidad_software_manana.git"
-  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
-  "bugs": {
-    "url": "https://github.com/CzDarkFenix90s/calidad_software_manana/issues"
-  },
-  "homepage": "https://github.com/CzDarkFenix90s/calidad_software_manana#readme",
   "dependencies": {
     "jest": "^30.2.0"
   }
