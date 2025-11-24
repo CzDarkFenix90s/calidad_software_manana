@@ -1,14 +1,17 @@
-const {sueldoAnual} = require('./sueldoAnual');
+const { sueldoAnual } = require ('./sueldoAnual');
 
-describe('Sueldo Anual',()=>{
-    test('Happy Path:500 -> 6000', () =>{
-        expect(SueldoAnual('Pepe',500)).toEqual({
-            nombre:'Pepe',
-            sueldoMensual: 500
-        });
+describe('sueldoAnual', () =>{
+    test('Happy path: 500 -> 6000 ', () => {
+        expect(sueldoAnual(
+            {
+                nombre: 'Juan', 
+                sueldoMensual: 500
+            })).toBe(6000);
     });
-    test('Sad path: nombre / sueldo invalidos', ()=>{
-        expect(()=>SueldoAnual({sueldoMensual: -1})).toThrow('sueldo mensual invalido');
-        expect(()=>SueldoAnual(null)).toThrow('empleado invalido');
+
+    test('Sad path: nombre / sueldo invalido', () => {
+        expect(()=>sueldoAnual({sueldoMensual: -1})).toThrow('sueldo mensual invalido');
+        expect(()=>sueldoAnual(null)).toThrow('empleado invalido');
     });
+
 });

@@ -1,12 +1,13 @@
 function promedio(arreglo){
-    if(!Array.isArray(arreglo) || arreglo.length==0) 
-        throw new TypeError("arreglo inválido");
-    let suma=0;
-    let indice=0;
-    while (indice<arreglo.length){
-        suma+=arreglo[indice];
-        indice++
+    if(!Array.isArray(arreglo) || arreglo.length==0 )
+        throw new TypeError("arreglo invalido");
+    let total = 0;
+    let p = 0;
+    while(arreglo.length > p){
+        total += arreglo[p]
+        p++;
     }
-    return suma/arreglo.length;
+    promedio1 = total/arreglo.length;
+    return promedio1
 }
-module.exports={promedio}
+module.exports = { promedio };

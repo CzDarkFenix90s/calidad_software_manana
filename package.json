@@ -4,18 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "test": "jest"
+}
+,
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/CzDarkFenix90s/calidad_software_manana.git"
+    "url": "git+https://github.com/Edu-142-vega/Calidad_de_Software_manana.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "type": "commonjs",
   "bugs": {
-    "url": "https://github.com/CzDarkFenix90s/calidad_software_manana/issues"
+    "url": "https://github.com/Edu-142-vega/Calidad_de_Software_manana/issues"
   },
-  "homepage": "https://github.com/CzDarkFenix90s/calidad_software_manana#readme"
+  "homepage": "https://github.com/Edu-142-vega/Calidad_de_Software_manana#readme",
+  "devDependencies": {
+    "jest": "^30.2.0"
+  }
 }
